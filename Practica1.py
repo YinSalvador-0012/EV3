@@ -11,10 +11,10 @@ class Persona:
 
     def calculadora_cumpleanios (self):
 
-        meses = 4
-        dia_hoy = 17
+        mes_actual = 4
+        dia_actual = 17
 
-        total_hoy = meses * 30.4 + dia_hoy
+        total_hoy = mes_actual * 30.4 + dia_actual
         total_cumple = self.__mes_cumpleanios * 30.4 + self.__dia_cumpleanios
 
         if total_cumple < total_hoy:
