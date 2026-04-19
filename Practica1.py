@@ -12,7 +12,7 @@ class Persona:
     def calculadora_cumpleanios (self):
 
         mes_actual = 4
-        dia_actual = 17
+        dia_actual = 20
 
         total_hoy = mes_actual * 30.4 + dia_actual
         total_cumple = self.__mes_cumpleanios * 30.4 + self.__dia_cumpleanios
@@ -41,7 +41,7 @@ class Persona:
         return self.__estatura
     
     def get_estudios(self):
-        return self.__estatura
+        return self.__estudios
     
     def get_dia_cumpleanios(self):
         return self.__dia_cumpleanios
@@ -49,6 +49,23 @@ class Persona:
     def get_mes_cumpleanios(self):
         return self.__mes_cumpleanios
     
+    def set_nombre(self,nombreNuevo):
+        self.__nombre = nombreNuevo
+
+    def set_estatura(self,estaturaNueva):
+        self.__estatura = estaturaNueva
+    
+    def set_estudios(self,estudiosNuevos):
+        self.__estudios = estudiosNuevos
+
+    def set_dia_cumpleanios(self,dia_cumpleaniosNuevo):
+        self.__dia_cumpleanios = dia_cumpleaniosNuevo
+
+    def set_mes_cumpleanios(self,mes_cumpleaniosNuevo):
+        self.__mes_cumpleanios = mes_cumpleaniosNuevo
+
+
+
 
 
 
