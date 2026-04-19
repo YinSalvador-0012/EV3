@@ -33,3 +33,23 @@ class Persona:
         self.saludo()
         print("")
         self.calculadora_cumpleanios()
+
+    def get_nombre(self):
+        return self.__nombre
+    
+    def get_estatura(self):
+        return self.__estatura
+    
+    def get_estudios(self):
+        return self.__estatura
+    
+    def get_dia_cumpleanios(self):
+        return self.__dia_cumpleanios
+
+    def get_mes_cumpleanios(self):
+        return self.__mes_cumpleanios
+    
+
+
+
+#USO DE CLASE
