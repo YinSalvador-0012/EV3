@@ -21,17 +21,11 @@ class Persona:
             total_cumple += 360  
 
         faltan_dias = total_cumple - total_hoy
-        opcion = 1
-
-        if opcion == 1:
-            print(f"Faltan {round(faltan_dias)} días.")
-        else:
-             print(f"Faltan {round(faltan_dias / 7)} semanas.")
-
-
+        print(f"Faltan {round(faltan_dias)} días que convertidos en semanas faltantes serian {round(faltan_dias / 7)} semanas aproximadamente para mi cumpleaños.")
+        
+        
     def info (self):
         self.saludo()
-        print("")
         self.calculadora_cumpleanios()
 
     def get_nombre(self):
@@ -65,8 +59,8 @@ class Persona:
         self.__mes_cumpleanios = mes_cumpleaniosNuevo
 
 
-
-
-
-
 #USO DE CLASE
+objeto_persona = Persona("X", 1.59,"LIC",7,10)
+
+objeto_persona.info()
+
