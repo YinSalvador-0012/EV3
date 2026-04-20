@@ -10,7 +10,6 @@ class Persona:
         print(f"Hola, soy {self.__nombre}, mi estatura es: {self.__estatura} metros y tengo de Estudios {self.__estudios} ")
 
     def calculadora_cumpleanios (self):
-
         mes_actual = 4
         dia_actual = 20
 
@@ -60,7 +59,40 @@ class Persona:
 
 
 #USO DE CLASE
-objeto_persona = Persona("X", 1.59,"LIC",7,10)
+objeto_persona = Persona("Jean Carlos", 1.59,"LIC",7,10)
+print("USO DE METODO (saludo)")
+objeto_persona.saludo()
 
+print("")
+print("Uso de metodo (calculadora_cumpleanios) ")
+objeto_persona.calculadora_cumpleanios()
+
+print("")
+print("Uso de metodo (info) ")
 objeto_persona.info()
 
+print("")
+print("Uso de metodos getters")
+
+print("Uso de metodo get nombre:")
+print(objeto_persona.get_nombre()) 
+print("")
+
+print("Uso de metodo get estatura:")
+print(objeto_persona.get_estatura())
+print("")
+
+print("Uso de metodo get estudios:")
+print(objeto_persona.get_estudios())
+print("")
+
+print("Uso de metodo get dia cumpleanios:")
+print(objeto_persona.get_dia_cumpleanios())
+print("")
+
+print("Uso de metodo get mes cumpleanios:")
+print(objeto_persona.get_mes_cumpleanios())
+
+print("Uso de metodos Setters")
+objeto_persona.set_nombre("Salvador")
+objeto_persona.info()
